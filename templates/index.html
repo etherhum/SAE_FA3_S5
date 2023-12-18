@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Interface</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <h1>Welcome to the Web Interface</h1>
+    <h2>Ping Module</h2>
+    <form action="/ping" method="post">
+        <label for="host">Enter Host:</label>
+        <input type="text" id="host" name="host" required>
+        <button type="submit">Ping</button>
+    </form>
+    <h2>IPv6 Module</h2>
+    <form action="/ipv6" method="post">
+        <label for="ipv6">Enter IPv6 Address:</label>
+        <input type="text" id="ipv6" name="ipv6" required>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>IPv4 Module</h2>
+    <form action="/ipv4" method="post">
+        <label for="ip">Enter IPv4 Address:</label>
+        <input type="text" id="ip" name="ip" required>
+        <label for="cidr">Enter CIDR Mask:</label>
+        <input type="text" id="cidr" name="cidr" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPv4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <h1>IPv4 result for {{ ip_address }}</h1>
+    <p>CIDR Mask: {{ cidr_mask }}</p>
+    <h2>Subnets:</h2>
+    <ul>
+        {% for subnet in subnets %}
+            <li>{{ subnet }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+$</body>
+</html>
+
